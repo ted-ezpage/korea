@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫美項目價格比較</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        header h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .section {
+            background-color: #ffffff;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .section-header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #555;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #f1f8ff;
+        }
+        .clinic {
+            font-weight: 600;
+            color: #2980b9;
+            font-size: 1.05em;
+        }
+        .price-krw {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.1em;
+            white-space: nowrap;
+        }
+        .price-twd {
+            font-weight: normal;
+            color: #2c3e50;
+            font-size: 1em;
+            white-space: nowrap;
+        }
+        .details {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .notes {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fffbe6;
+            border-left: 5px solid #f1c40f;
+            border-radius: 8px;
+        }
+        .notes h3 {
+            margin-top: 0;
+            color: #c0392b;
+        }
+        .notes ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .notes li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>醫美重點項目價格比較</h1>
+        </header>
+
+        <!-- 美版熱瑪吉 (鳳凰電波) -->
+        <div class="section">
+            <div class="section-header">美版熱瑪吉 (鳳凰電波)</div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>診所</th>
+                            <th>方案內容</th>
+                            <th>價格 (韓元)</th>
+                            <th>約台幣 (TWD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">300發</td>
+                            <td class="price-krw">1,300,000</td>
+                            <td class="price-twd">~ 29,900</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">600發</td>
+                            <td class="price-krw">2,200,000</td>
+                            <td class="price-twd">~ 50,600</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">900發</td>
+                            <td class="price-krw">3,490,000</td>
+                            <td class="price-twd">~ 80,270</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">眼部 225發</td>
+                            <td class="price-krw">900,000</td>
+                            <td class="price-twd">~ 20,700</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">眼部 450發</td>
+                            <td class="price-krw">1,600,000</td>
+                            <td class="price-twd">~ 36,800</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">BIO TACE</td>
+                            <td class="details">FLX (300發)</td>
+                            <td class="price-krw">1,511,500</td>
+                            <td class="price-twd">~ 34,765</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 美版超聲刀 -->
+        <div class="section">
+            <div class="section-header">美版超聲刀</div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>診所</th>
+                            <th>方案內容</th>
+                            <th>價格 (韓元)</th>
+                            <th>約台幣 (TWD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="clinic">Re:Berry</td>
+                            <td class="details">300發 + 雷飛納斯 3000發</td>
+                            <td class="price-krw">1,290,000</td>
+                            <td class="price-twd">~ 29,670</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">Re:Berry</td>
+                            <td class="details">300發 + Onda 120KJ</td>
+                            <td class="price-krw">1,690,000</td>
+                            <td class="price-twd">~ 38,870</td>
+                        </tr>
+                         <tr>
+                            <td class="clinic">Re:Berry</td>
+                            <td class="details">200發 + 索夫波 300發</td>
+                            <td class="price-krw">3,190,000</td>
+                            <td class="price-twd">~ 73,370</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">1代 300發</td>
+                            <td class="price-krw">900,000</td>
+                            <td class="price-twd">~ 20,700</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">1代 600發</td>
+                            <td class="price-krw">1,620,000</td>
+                            <td class="price-twd">~ 37,260</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">2代 300發</td>
+                            <td class="price-krw">1,500,000</td>
+                            <td class="price-twd">~ 34,500</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">2代 600發</td>
+                            <td class="price-krw">2,700,000</td>
+                            <td class="price-twd">~ 62,100</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">BIO TACE</td>
+                            <td class="details">全新2代 (300發)</td>
+                            <td class="price-krw">1,160,000</td>
+                            <td class="price-twd">~ 26,680</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 麗珠蘭 -->
+        <div class="section">
+            <div class="section-header">麗珠蘭 (Rejuran)</div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>診所</th>
+                            <th>方案內容</th>
+                            <th>價格 (韓元)</th>
+                            <th>約台幣 (TWD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="clinic">八月·美肌</td>
+                            <td class="details">黑盒 2cc</td>
+                            <td class="price-krw">250,000</td>
+                            <td class="price-twd">~ 5,750</td>
+                        </tr>
+                         <tr>
+                            <td class="clinic">八月·美肌</td>
+                            <td class="details">黑盒 4cc</td>
+                            <td class="price-krw">450,000</td>
+                            <td class="price-twd">~ 10,350</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">黑盒 2cc</td>
+                            <td class="price-krw">270,000</td>
+                            <td class="price-twd">~ 6,210</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">可優</td>
+                            <td class="details">紅盒(HB) 2cc</td>
+                            <td class="price-krw">300,000</td>
+                            <td class="price-twd">~ 6,900</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">八月·美肌</td>
+                            <td class="details">白盒 1cc</td>
+                            <td class="price-krw">250,000</td>
+                            <td class="price-twd">~ 5,750</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">八月·美肌</td>
+                            <td class="details">白盒 2cc</td>
+                            <td class="price-krw">450,000</td>
+                            <td class="price-twd">~ 10,350</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">Re:Berry</td>
+                            <td class="details">黑盒 4cc + 再生激光 10分鐘</td>
+                            <td class="price-krw">3,900,000</td>
+                            <td class="price-twd">~ 89,700</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">首爾愛</td>
+                            <td class="details">4cc (睡眠) + 美白針</td>
+                            <td class="price-krw">3,800,000</td>
+                            <td class="price-twd">~ 87,400</td>
+                        </tr>
+                        <tr>
+                            <td class="clinic">首爾愛</td>
+                            <td class="details">(眼部) 1cc + 立姿水光 4cc</td>
+                            <td class="price-krw">4,400,000</td>
+                            <td class="price-twd">~ 101,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 注意事項 -->
+        <div class="notes">
+            <h3>注意事項</h3>
+            <ul>
+                <li>以上價格為各診所提供的優惠價，部分方案包含其他搭配項目。</li>
+                <li>台幣價格以匯率 **1 KRW ≈ 0.023 TWD** 估算，僅供參考，實際匯率請以當下為準。</li>
+                <li>部分診所價格需額外加上 10% 附加稅(VAT)，計算總價時請留意。</li>
+                <li>各項優惠均有特定活動期間 (多為2025年7月或8月)，詳情請以診所公告為準。</li>
+                <li>本資料僅為整理參考，實際方案內容與價格請務必直接與各診所確認。</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
